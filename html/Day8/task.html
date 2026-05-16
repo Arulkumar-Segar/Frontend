@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Complete HTML5 Multimedia Webpage Example">
+    <meta name="keywords" content="HTML5, semantic tags, audio, video, iframe, favicon, Open Graph">
+    <meta name="author" content="OpenAI ChatGPT">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HTML5 Multimedia Webpage">
+    <meta property="og:description" content="A webpage demonstrating HTML5 features including audio, video, semantic tags, iframe, and meta tags.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png">
+    <meta property="og:url" content="https://example.com">
+
+    <!-- Title -->
+    <title>Complete HTML5 Webpage</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <h1>Complete HTML5 Multimedia Webpage</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#audio">Audio</a> |
+            <a href="#video">Video</a> |
+            <a href="#iframe">Iframe</a> |
+            <a href="#semantic">Semantic Tags</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section>
+        <article>
+            <h2>Introduction</h2>
+            <p>
+                This webpage demonstrates HTML5 features such as semantic tags,
+                audio, video, iframe embedding, favicon, Open Graph meta tags,
+                and multimedia elements.
+            </p>
+        </article>
+    </section>
+
+    <!-- Audio Section -->
+    <section id="audio">
+        <h2>Audio Players</h2>
+
+        <!-- Basic Audio Player -->
+        <h3>Basic Audio Player</h3>
+        <audio controls>
+            <source src="audio/sample.mp3" type="audio/mpeg">
+            <source src="audio/sample.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br><br>
+
+        <!-- Autoplay Muted Loop Audio -->
+        <h3>Autoplay Muted Loop Audio</h3>
+        <audio autoplay muted loop controls>
+            <source src="audio/background.mp3" type="audio/mpeg">
+            <source src="audio/background.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Video Players</h2>
+
+        <!-- Basic Video Player -->
+        <h3>Basic Video Player</h3>
+        <video width="500" controls>
+            <source src="video/sample.mp4" type="video/mp4">
+            <source src="video/sample.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+
+        <br><br>
+
+        <!-- Poster Autoplay Muted Loop Video -->
+        <h3>Autoplay Video with Poster</h3>
+        <video width="500"controls poster="images/poster.jpg"
+            autoplay
+            muted
+            loop>
+            <source src="video/movie.mp4" type="video/mp4">
+            <source src="video/movie.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Iframe Section -->
+    <section id="iframe">
+        <h2>Iframe Examples</h2>
+
+        <!-- YouTube Video -->
+        <h3>Embedded YouTube Video</h3>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <br><br>
+
+        <!-- Google Map -->
+        <h3>Embedded Google Map</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.412!"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Semantic vs Non-Semantic -->
+    <section id="semantic">
+        <h2>Semantic vs Non-Semantic Tags</h2>
+
+        <!-- Non-Semantic -->
+        <div style="border:1px solid black; padding:10px; margin-bottom:20px;">
+            <h3>Non-Semantic Example</h3>
+            <div>
+                This is a div element.
+            </div>
+
+            <span>
+                This is a span element.
+            </span>
+        </div>
+
+        <!-- Semantic -->
+        <header style="border:1px solid green; padding:10px;">
+            <h3>Semantic Example Header</h3>
+        </header>
+
+        <section style="border:1px solid blue; padding:10px;">
+            <p>
+                This section uses semantic tags which clearly describe
+                the content structure.
+            </p>
+        </section>
+
+        <footer style="border:1px solid red; padding:10px;">
+            Semantic Footer
+        </footer>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 HTML5 Demo Webpage. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
