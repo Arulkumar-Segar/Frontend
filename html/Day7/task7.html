@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+    <!-- Create a Student Registration Form using all input types including text, email, password, radio, checkbox, select, textarea, and submit button -->
+    <section>
+        <div>
+            <h2>Student Registration Form</h2>
+            <form action="">
+                <label >Name:
+                    <input type="text" id="name" placeholder="Enter the Name" required>
+                </label><br><br>
+                <label for="">Email
+                    <input type="email"  placeholder="Enter Email">
+                </label><br><br>
+                <label for="">Contact:
+                     <input type="tel" maxlength="10"  minlength="10" required>  
+                </label><br><br>
+                <label for="age">Gender:
+                    <input type="radio" name="age">Male
+                    <input type="radio" name="age">Female
+                </label><br><br>
+                <label for="">Skills
+                    <input type="checkbox">HTML
+                    <input type="checkbox">CSS
+                    <input type="checkbox">JS
+                </label><br><br>
+                <label for="">Course
+                <select name="" id="">=
+                    <option value="" selected disabled>Choose One..</option>
+                    <option value="cse">CSE</option>
+                    <option value="BCA">BCA</option>
+                    <option value="ECE">ECE</option>
+                </select></label><br><br>
+                <label for="">Feedback
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label><br><br>
+                <input type="submit">
+            </form>
+        </div>
+    </section>
+    <!-- Create an Employee Details Table using table, tr, th, td, rowspan, and colspan -->
+    <section>
+        <div>
+            <h2>Employee Deatils</h2>
+            <table border="2">
+                <thead>
+                    <th>SNO</th>
+                    <th>Emp_Name</th>
+                    <th>Employee_ID</th>
+                    <th>Department</th>
+                    <th>Award</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Arul</td>
+                        <td>EMP001</td>
+                        <td>IT</td>
+                        <td rowspan="5">All are best Employee Award</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>bharath</td>
+                        <td>EMP002</td>
+                        <td>Network</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Karthi</td>
+                        <td>EMP003</td>
+                        <td>Marketing</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kathrin</td>
+                        <td>EMP004</td>
+                        <td>Finance</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Lalitha</td>
+                        <td>EMP005</td>
+                        <td>HR</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Bharath got Promote to next level</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Create a Login and Signup Form with validation attributes like required, minlength, maxlength, and placeholder -->
+    <section>
+        <h2>Login</h2>
+        <div>
+            <form action="">
+                <label for="username">Username:
+                    <input type="username" required>
+                </label><br><br>
+                <label for="password">Password:
+                    <input type="password" required> 
+                </label><br><br>
+                <button> SignIn</button>
+            </form>
+        </div>
+        <h2>Sign up</h2>
+        <form action="">
+            <input type="text" placeholder="Firstname">
+            <input type="text" placeholder="lastname"><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <input type="password" placeholder="New password" minlength="8" max="20" required><br><br>
+            <label for="DOB">DOB
+                <input type="date">
+            </label><br><br>
+            <label for="gender">Gender
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">FeMale
+            </label><br><br>
+            <button>Sign Up</button>
+        </form>
+    </section>
+    <!-- Create a College Admission Form using fieldset, legend, select, option, and optgroup tags -->
+    <section>
+        <div>
+            <h2>College Admission Form</h2>
+            <form action="">
+                <label for="">Student name
+                    <input type="text" required> 
+                </label><br><br>
+                <label for="">Father's name
+                    <input type="text" required> 
+                </label><br><br>
+                <label for="">Mother's name
+                    <input type="text" required> 
+                </label><br><br>
+                <label for="">DOB
+                    <input type="date">
+                </label>
+                <label for="">Gender
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">FeMale
+                </label>
+                <fieldset>
+                    <legend>Present Address</legend>
+                    <label for="Address">Address
+                        <textarea name="" id="Address" cols="30" rows="10"></textarea>
+                    </label><br><br>
+                    <label for="">District
+                        <input type="text">
+                    </label><br><br>
+                    <label for="">State
+                        <input type="text">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Permanent Address</legend>
+                    <label for="Paddress">Address
+                        <textarea name="" id="Paddress" cols="30" rows="10"></textarea>
+                    </label><br><br>
+                    <label for="">District
+                        <input type="text">
+                    </label><br><br>
+                    <label for="">State
+                        <input type="text">
+                    </label>
+                </fieldset><br><br>
+                <label for="">Course
+                <select required>
+                    <option value="" selected disabled>Choose one..</option>
+                    <optgroup label="UG">
+                        <option value="UG_CSE">CSE</option>
+                        <option value="UG_ECE">ECE</option>
+                        <option value="UG_EEE">EEE</option>
+                    </optgroup>
+                    <optgroup label="PG">
+                        <option value="PG_CSE">CSE</option>
+                        <option value="PG_ECE">ECE</option>
+                        <option value="PG_EEE">EEE</option>
+                    </optgroup>
+                </select>
+            </label><br><br>
+            <label for="">Religion
+                <input type="text">
+            </label><br><br>
+            <label for="">Nationality
+                <input type="text">
+            </label><br><br>
+            <label for="">Phone Number
+                <input type="tel" min="10" max="10" required>
+            </label><br><br>
+            <label for="">Email
+                <input type="email" required>
+            </label><br><br>
+            <h3>Declaration</h3>
+            <input type="checkbox" required>hereby declare that all the information submitted by me in the application form is correct, true and valid.
+           <br><br>
+           <input type="submit">     
+        </form>
+
+        </div>
+    </section>
+    <!--Create a Product Details Table with product image, name, category, stock, quantity, and price-->
+    <section>
+        <div>
+        <table border="2">
+        <h2>Product Details</h2>
+        <thead>
+            <th>Product image</th>
+            <th>Name</th>
+            <th>category</th>
+            <th>stock</th>
+            <th>quantity(Kgs)</th>
+            <th>price(Rs)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../Assets/Fruits/mango.jpg" alt="" width="40" ></td>
+                <td>Mango</td>
+                <td>Fruits</td>
+                <td>available</td>
+                <td>3</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td><img src="../Assets/Fruits/banana.jpg" alt="" width="40" ></td>
+                <td>banana</td>
+                <td>Fruits</td>
+                <td>available</td>
+                <td>2</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td><img src="../Assets/Fruits/Orange.jpg" alt="" width="40"></td>
+                <td>Orange</td>
+                <td>Fruits</td>
+                <td>available</td>
+                <td>1</td>
+                <td>420</td>
+            </tr>
+            <tr>
+                <td><img src="../Assets/Fruits/pomegranate.jpeg" alt="" width="40"></td>
+                <td>Pomegranate</td>
+                <td>Fruits</td>
+                <td>available</td>
+                <td>2</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td><img src="../Assets/Fruits/strawberry.jpg" alt="" width="40" ></td>
+                <td>strawberry</td>
+                <td>Fruits</td>
+                <td>Out of Stock</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            
+        </tbody>
+    </table>
+        </div>
+    </section>
+    <!--Create a Resume Builder Form containing personal details, education details, skills, experience, and file upload option-->
+    <section>
+        <div>
+            <form action="">
+                <h2>Resume</h2>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name">Name:
+                        <input type="text" required>
+                    </label><br><br>
+                    <label for="email" >Email:
+                        <input type="email" required>
+                    </label>
+                    <label for="contact">Contact:
+                        <input type="tel" required minlength="10" maxlength="10">
+                    </label><br><br>
+                    <label for="DOB">DOB:
+                        <input type="date" id="DOB">
+                    </label><br><br>
+                    <label for="address">Address:
+                        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                    </label><br><br>
+                    <label for="linkedin">linkedin
+                        <input type="text">
+                    </label>
+                    <label for="github">github
+                        <input type="text">
+                    </label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Education Details</legend>
+                    <label for="">Graduate
+                        <input type="text" placeholder="College">
+                        <input type="text" placeholder="Unversity">
+                        <input type="number" placeholder="Percentage or %" min="1" max="100">
+                    </label><br><br>
+                    <label for="">HSC
+                        <input type="text" placeholder="School">
+                        <input type="text" placeholder="Unversity">
+                        <input type="number" placeholder="Percentage or %" min="1" max="100">
+                    </label><br><br>
+                    <label for="">SSLC
+                        <input type="text" placeholder="School">
+                        <input type="text" placeholder="Unversity">
+                        <input type="number" placeholder="Percentage or %" min="1" max="100">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <input type="checkbox">HTML
+                    <input type="checkbox">CSS
+                    <input type="checkbox">JS
+                    <input type="checkbox">React
+                    <input type="checkbox">Painting
+                    <input type="checkbox">Drawing
+                    <input type="checkbox">others
+                    <input type="text">
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset><br><br>
+
+                <label for="doc">Upload Documents</label>
+                <input type="file" id="doc" ><br><br>
+
+                <button>Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
