@@ -1,0 +1,142 @@
+inline Style
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+<tagname style="property:value;">content</tagname>
+
+internal style
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
+
+<style>
+selector{
+    property:value;
+}
+<style>
