@@ -1,0 +1,24 @@
+*{
+    background-color: lightblue;
+}
+h1{
+    color: violet;
+}
+h2{
+    color: yellowgreen;
+}
+.heading{
+    color: tomato;
+}
+#heading-three{
+    color: red;
+}
+p{
+    color: blue;
+}
+.paragraph{
+    color: yellow;
+}
+#para{
+    color: darkgreen;
+}
