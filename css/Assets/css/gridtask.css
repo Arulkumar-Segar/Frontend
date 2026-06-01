@@ -21,3 +21,13 @@ body{
 .parent{
     padding: 40px;
 }
+.btn{
+    background-color: rgb(218, 146, 29);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.btn-new{
+    padding: 10px;
+    border: 2px solid rgb(209, 139, 35);
+}
