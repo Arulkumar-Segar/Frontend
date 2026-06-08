@@ -117,65 +117,65 @@ let bluePrint;
 console.log(bluePrint)
 
 
-const powerStar;
-console.log(powerStar)
-const fireMan;
-console.log(fireMan)
-const ratHouse;
-console.log(ratHouse)
-const mangoFruit;
-console.log(mangoFruit)
-const cityGangster;
-console.log(cityGangster)
-const tableFan;
-console.log(tableFan)
-const trendBolt;
-console.log(trendBolt)
-const firstFloor;
-consol.log(firstFloor)
-const captainAmerica;
-console.log(captainAmerica)
-const basketBall;
-console.log(basketBall)
-const lemonRice;
-console.log(lemonRice)
-const roseGarden;
-console.log(roseGarden)
-const kingMaker;
-console.log(kingMaker)
-const tenThousands
-console.log(tenThousands)
-const filmDrector
-console.log(filmDrector)
-const lightGreen
-console.log(lightGreen)
-const fieldSet;
-console.log(fieldSet)
-const moneyTransfer;
-console.log(moneyTransfer)
-const governmentHospital;
-console.log(governmentHospital)
-const safetyJacket
-console.log(safetyJacket)
-const controlUnit
-console.log(controlUnit)
-const boatHouse
-console.log(boatHouse)
-const mensHostel
-console.log(mensHostel)
-const slowRace;
-console.log(slowRace)
-const luckyStar;
-console.log(luckyStar)
-const freedomFighter;
-console.log(freedomFighter)
-const radhaKrishna;
-console.log(radhaKrishna)
-const clockWise;
-console.log(clockWise)
-const softwareEngineer;
-console.log(softwareEngineer)
-const speedPost
-console.log(speedPost)
-const webOrder;
-console.log(webOrder)
+// const powerStar;
+// console.log(powerStar)
+// const fireMan;
+// console.log(fireMan)
+// const ratHouse;
+// console.log(ratHouse)
+// const mangoFruit;
+// console.log(mangoFruit)
+// const cityGangster;
+// console.log(cityGangster)
+// const tableFan;
+// console.log(tableFan)
+// const trendBolt;
+// console.log(trendBolt)
+// const firstFloor;
+// consol.log(firstFloor)
+// const captainAmerica;
+// console.log(captainAmerica)
+// const basketBall;
+// console.log(basketBall)
+// const lemonRice;
+// console.log(lemonRice)
+// const roseGarden;
+// console.log(roseGarden)
+// const kingMaker;
+// console.log(kingMaker)
+// const tenThousands
+// console.log(tenThousands)
+// const filmDrector
+// console.log(filmDrector)
+// const lightGreen
+// console.log(lightGreen)
+// const fieldSet;
+// console.log(fieldSet)
+// const moneyTransfer;
+// console.log(moneyTransfer)
+// const governmentHospital;
+// console.log(governmentHospital)
+// const safetyJacket
+// console.log(safetyJacket)
+// const controlUnit
+// console.log(controlUnit)
+// const boatHouse
+// console.log(boatHouse)
+// const mensHostel
+// console.log(mensHostel)
+// const slowRace;
+// console.log(slowRace)
+// const luckyStar;
+// console.log(luckyStar)
+// const freedomFighter;
+// console.log(freedomFighter)
+// const radhaKrishna;
+// console.log(radhaKrishna)
+// const clockWise;
+// console.log(clockWise)
+// const softwareEngineer;
+// console.log(softwareEngineer)
+// const speedPost
+// console.log(speedPost)
+// const webOrder;
+// console.log(webOrder)
