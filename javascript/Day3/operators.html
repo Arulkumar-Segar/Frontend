@@ -1,0 +1,156 @@
+<script>
+    //task 1
+    let tamil = 60
+    let english=50
+    let maths=60
+    totalMarks = tamil + english + maths
+    console.log('total Mark is:',totalMarks);
+    totalMarks /=3
+    console.log("average is:",totalMarks);
+
+    //task2
+    let basicSalery = 8000
+    let bonus=2000
+    grossSalery=basicSalery+bonus
+    console.log('grossSalery is',grossSalery);
+
+    //task3
+    let productPrice=300
+    let quantity=5
+    totalAmount=productPrice*quantity
+    console.log("the product total amount is",totalAmount);
+
+    //task4
+    let totalBill = 5000
+    let friendsCount=5
+    amountPerPerson=totalBill/friendsCount
+    console.log("Amount per person:",amountPerPerson);
+
+    //task5
+    let num=25;
+    rem=num%2
+    console.log("the rem number is odd",rem);
+
+    //task6
+    let side=5
+    areaOfSquare=side**2
+    console.log("area of Square is:",areaOfSquare);
+    //task7
+    let balance=10000
+    let deposite=2000
+    balance +=deposite
+    console.log("the bank balance is:",balance);
+
+    //task8
+    let bankBalance = 5000;
+    let withdraw=1000
+    bankBalance -=withdraw;
+    console.log("balance amount is:",bankBalance);
+
+    //task9
+    let stock =10
+     stock *= 5;
+     console.log("stock is 5 time increase:",stock);
+
+     //task10
+     let price = 2000;
+     price %=2;
+     console.log("Discount is 50% so price is:",price);
+
+     //task11
+     let userName1="admin"
+     let userName2 ="admin"
+      final = (userName1 == userName2)
+      console.log("final output:",final);
+      final = (userName1 === userName2)
+      console.log("final output:",final);
+      //task12
+      let age=18
+      console.log("age is greaterthan 18:",age>18);
+      console.log("age is lessthan 18:",age<18);
+      console.log("age is greaterthan equal to 18:",age>=18);
+      console.log("age is lessthan equal to 18:",age<=18);
+
+      //task13
+      let price1=1000
+      let price2=1500
+      prices=price1 != price2;
+      console.log("compare is two product",price);
+
+      //task14
+      let mark=85
+      hasCertificate = true;
+      eligible= (mark>80 && hasCertificate)
+      console.log("college admission eligibility:",eligible);
+
+      //task15
+      let isAdmin = false
+      let isHR = true
+      let isBlocked = false
+        useOR = (isAdmin || isHR || isBlocked)
+        console.log("is access available",useOR);
+        useNot = (!isAdmin || !isHR || !isBlocked)
+        console.log("is access available",useNot);
+
+
+ //mini project
+
+    let studentName = "John";
+    let mark1 = 80;
+    let mark2 = 90;
+    let mark3 = 85;
+
+// Arithmetic Operators
+let total = mark1 + mark2 + mark3;   
+let difference = mark2 - mark1;      
+let product = mark1 * 2;             
+let average = total / 3;             
+let remainder = total % 2;           
+let squareMark = mark1 ** 2;         
+
+// Assignment Operators
+let temp = 10;
+
+temp += 5;  
+temp -= 3;  
+temp *= 2;  
+temp /= 4;  
+
+// Comparison Operators
+let equalCheck = (mark1 == "80");   
+let strictEqual = (mark1 === "80"); 
+let notEqual = (mark1 != mark2);    
+let greaterThan = (mark2 > mark1);  
+let lessThan = (mark1 < mark2);     
+let greaterOrEqual = (mark3 >= 85); 
+let lessOrEqual = (mark1 <= 80);    
+
+// Logical Operators
+let passed = (mark1 >= 35 && mark2 >= 35 && mark3 >= 35); 
+let distinction = (average >= 75 || mark1 >= 95);         
+let failed = !passed;                                     
+
+// Report
+console.log("Student Report");
+console.log("Name:", studentName);
+console.log("Total:", total);
+console.log("Average:", average);
+
+console.log("Difference:", difference);
+console.log("Product:", product);
+console.log("Remainder:", remainder);
+console.log("Square of Mark1:", squareMark);
+
+console.log("== :", equalCheck);
+console.log("=== :", strictEqual);
+console.log("!= :", notEqual);
+console.log("> :", greaterThan);
+console.log("< :", lessThan);
+console.log(">= :", greaterOrEqual);
+console.log("<= :", lessOrEqual);
+
+console.log("Passed:", passed);
+console.log("Distinction:", distinction);
+console.log("Failed:", failed);
+
+</script>
