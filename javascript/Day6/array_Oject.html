@@ -1,0 +1,141 @@
+<script>
+    //task
+    let heros=['vijay','ajith','surya','SK']
+    for(let i=0;i<heros.length;i++){
+        console.log(heros[i])
+    }
+    //task2 find the highest value
+    let movColl=[100,200,500,400,300]
+    let highest = movColl[0]
+    for(let i=0;i<=movColl.length;i++){
+        if(movColl[i]>highest){
+            highest=movColl[i]
+        }
+    }
+    console.log("The Hghest collection is:",highest);
+    //task3 find the lowest value
+    let newColl =[200,500,700,600,900,100]
+    let lowest=newColl[0]
+    for(let i=0;i<newColl.length;i++){
+        if(newColl[i]<lowest){
+            lowest=newColl[i]
+        }
+    }
+    console.log('The Hghest collection is:',lowest);
+
+    //task4 find the total collection
+    let totalColl=[10,50,20,30]
+    let totalnew=0
+    for(let i=0;i<totalColl.length;i++){
+        totalnew +=totalColl[i]
+    }
+    console.log("The Total Collection is:",totalnew);
+
+    //task5 find avg 
+    let movieColl=[10,20,30,40,100]
+    let firstColl=0
+    for(let i=0;i<movieColl.length;i++){
+        firstColl += movieColl[i]
+    }
+    let avg=firstColl/movieColl.length
+    console.log("the avg is:",avg);
+    //task6 find heros name rev order
+    let heroNames=['vijay','ajith','surya','SK']
+    console.log(heroNames);
+    for(let i=heroNames.length-1;i>=0;i--){
+        console.log(heroNames[i]);
+    }
+
+    //task7 find the fruit mango
+    let fruits=['apple','orange','mango','banana']
+    let findfruit = 'mango'
+    let found = false
+    for(let i=0;i<fruits.length;i++){
+        if(fruits[i] === findfruit){
+            found = true
+            break
+        }
+    }
+    if(found){
+
+        console.log("Found",findfruit);
+    }else{
+        console.log('Not Found',findfruit);
+    }
+
+    //task8 find total fruits in the array without using .length
+
+    let fruitss=["apple",'mango','orange']
+    let count=0;
+    for(const fruit of fruitss){
+        count++;
+    }
+    console.log("Total fruit",count);
+
+    //task9 find the longest name in the heros
+
+    let heroNamess=['vijay','ajith','surya','Sivakarthikeyan']
+    let longest=heroNamess[0]
+    for(let i=0;i<heroNamess.length;i++){
+        if(heroNamess[i].length > longest.length){
+            longest = heroNamess[i]
+        }
+    }
+    console.log("the longest hero name is:",longest);
+
+    //task10 find movie name LEVEL is palindrome
+    let moviesName='LEVEL'
+    let reversed=""
+    for(let i=moviesName.length-1;i>=0;i--){
+        reversed += moviesName[i]
+    }
+    if(moviesName === reversed){
+        console.log("this is palindrome");
+    }
+    else{
+        console.log("this is not palindrome");
+    }
+
+    //task11 reverse string vijay
+
+    let names="VIJAY"
+    let rev=""
+    for(let i=names.length-1;i>0;i--){
+        rev += names[i]
+    } 
+    console.log("VIJAY is Reversed:",rev);
+
+    //task12 find first 10 number fibonacci series
+
+    let num1=0;
+    let num2=1;
+    console.log(num1);
+    console.log(num2);
+    for(let i=3;i<=10;i++){
+        let num3=num1 + num2;
+        console.log(num3);
+        num1 = num2
+        num2 = num3
+    }
+
+    //task13 find the how many vowvels in the name of surya
+    let vovName='SURIYA'
+    let counts=0
+    for(let i=0;i<=vovName.length;i++){
+        if(vovName[i] === "A" ||vovName[i] === "E" ||vovName[i] === "I" ||vovName[i] === "O" ||vovName[i] === "U" ){
+            counts++
+        }
+    }
+    console.log("total number of the VOWELS in the word:",counts);
+
+    //task14 how many times the character appears
+    let namString="VIJAY"
+    let findA ="A"
+    let countlogic=0
+    for(let i=0;i<namString.length;i++){
+        if(namString[i]=== findA){
+            countlogic++
+        }
+    }
+    console.log("A is Appear in times of:",countlogic);
+</script>

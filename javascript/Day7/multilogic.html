@@ -1,0 +1,63 @@
+<script>
+    //task1
+    let numbers = [1, 2, 3, 5];
+
+let n = numbers.length + 1; // Expected count including missing number
+
+let expectedSum = (n * (n + 1)) / 2;
+let actualSum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    actualSum += numbers[i];
+}
+
+let missingNumber = expectedSum - actualSum;
+
+console.log(missingNumber);
+
+
+//task2
+let str = "programming";
+let found = false;
+
+for (let i = 0; i < str.length; i++) {
+    let count = 0;
+
+    for (let j = 0; j < str.length; j++) {
+        if (str[i] === str[j]) {
+            count++;
+        }
+    }
+
+    if (count === 1) {
+        console.log(str[i]);
+        found = true;
+        break;
+    }
+}
+
+if (!found) {
+    console.log("No non-repeated character");
+}
+
+
+//task3
+let strs = "javascript";
+
+let founds = false;
+
+for (let i = 0; i < strs.length; i++) {
+    for (let j = i + 1; j < strs.length; j++) {
+        if (strs[i] === strs[j]) {
+            console.log(str[i]);
+            founds = true;
+            break;
+        }
+    }
+    if (founds) break;
+}
+
+if (!founds) {
+    console.log("No repeated character");
+}
+</script>
