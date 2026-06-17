@@ -1,0 +1,113 @@
+<script>
+    // Task 1 – push() Method
+    const frontend=['HTML','CSS','JS']
+   let show = frontend.push('React','Node.js')
+    console.log(show);
+    console.log(frontend);
+
+    //pop()method
+    const frontendM=['HTML','CSS','JS','React']
+    let shows =frontendM.pop()
+    console.log(shows);
+    console.log(frontendM);
+    //pop()method
+    const frontendTopics=['HTML','CSS','JS','React']
+    let showss =frontendM.shift()
+    console.log(showss);
+    console.log(frontendTopics);
+    // Task 4 – unshift() Method
+    const heros =['Ajith','sutya','SK']
+   let herosshow= heros.unshift('Dhanush','vijay')
+    console.log(herosshow);
+    console.log(heros);
+    // Task 5 – splice() Method
+    const newf = ["HTML","CSS","Bootstrap","React"]
+    let newfs =newf.splice(2,1,"JavaScript")
+    console.log(newf);
+    // Task 6 – slice() Method
+    const myNew = ["HTML","CSS","JavaScript","React","Node"]
+    let myNews = myNew.slice(2,4)
+    console.log(myNews);
+
+    //Task 7 – Object Looping forin()
+    let student = {
+
+    name:"Sudhan",
+
+    course:"MERN",
+
+    city:"Chennai",
+
+    age:25
+
+    };  
+    for(const names in student){
+        // console.log(names);
+        console.log(names ,":",student[names]);
+    }
+
+    // Task 8 – Array of Objects Looping forof()
+    let heroandMovies = [
+   {
+      name:"Vijay",
+      movie:"GOAT"
+   },
+
+   {
+      name:"Ajith",
+      movie:"Vidaamuyarchi"
+   },
+
+   {
+      name:"Suriya",
+      movie:"Kanguva"
+   }
+]
+for(const moviesandheros of heroandMovies){
+    console.log(moviesandheros.name,"-",moviesandheros.movie);
+}
+
+    // Task 9 – join() Method
+
+    const newfor = ["Vijay","Ajith","Suriya","SK"]
+    let change = newfor.join(" | ")
+    console.log(change);
+    // Task 10 – includes() Method
+    const frenttopics = ["HTML","CSS","JavaScript","React"]
+    let output = frenttopics.includes("React")
+    if(output){
+        console.log("Found");
+    }else{
+        console.log("Not Found");
+        
+    }
+
+//concat() Combines two arrays.
+let arr1 = [1,2,3,4,5]
+let arr2 = [6,7,8,9,10]
+console.log(arr1.concat(arr2)); 
+
+//indexof() Returns the first index of an element.
+let arr3 =[1,2,3,4,5,67]
+console.log(arr3.indexOf(2))
+// lastIndexOf() Returns the last occurrence index of an element.
+
+let arr4 = [1,2,3,4,5]
+console.log(arr4.lastIndexOf(5));
+
+// reverse() Reverses the array order.
+let arr5 = [1,2,3,4,5]
+console.log(arr5.reverse());
+// sort() Sorts array elements alphabetically.
+let arr6 =["july","arul","mani","bharath"]
+console.log(arr6.sort());
+
+//toString() Converts an array into a string.
+let arr7 =["july","arul","mani","bharath"]
+console.log(arr7.toString());
+
+// length() Returns the number of elements in the array.
+let arr8 =["july","arul","mani","bharath"]
+console.log(arr8.length);
+
+</script>
