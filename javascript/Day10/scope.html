@@ -1,0 +1,124 @@
+<script>
+    let hero ='vijay'
+    const data =()=>{
+        console.log(hero);
+    }
+    data()
+    if(true){
+        console.log(hero);
+    }
+    for(let i=0;i<3;i++){
+        console.log(hero);
+    }
+
+    // task2
+    const movie = () => {
+    let collection = 800;
+    };
+
+    movie();
+
+    // Trying to access collection outside the function
+    console.log(collection);
+
+    // task3
+    if (true) {
+
+    var actor1 = "Ajith";
+
+    let actor2 = "Vijay";
+
+    }
+
+    console.log("actor1:", actor1);
+    console.log("actor2:", actor2);
+
+    // task4
+    function showMovie() {
+    console.log("GOAT Movie Released");
+    }
+
+    // Function Call
+    showMovie();
+
+    // task5
+    const add = (a, b) => {
+    console.log("Sum:", a + b);
+    };
+
+    // Function Call
+    add(10, 20);
+
+    // task6
+    function processBooking(callback) {
+    callback();
+}
+
+    // Anonymous arrow function passed as a callback
+    processBooking(() => {
+    console.log("Booking Confirmed");
+    });
+
+    // task7
+    setTimeout(() => {
+    console.log("Movie Started");
+}, 2000);
+//task8
+function processOrder(callback) {
+    console.log("Order Received");
+    callback();
+}
+
+function deliverOrder() {
+    console.log("Order Delivered");
+}
+
+// Passing function as a callback
+processOrder(deliverOrder);
+
+// task9
+function createCounter() {
+    let count = 0;
+
+    return function () {
+        count++;
+        console.log("Count:", count);
+    };
+}
+
+const counter = createCounter();
+
+// Increment 3 times
+counter();
+counter();
+counter();
+
+// task10
+function createBankAccount() {
+    let balance = 5000;
+
+    return {
+        deposit(amount) {
+            balance += amount;
+            console.log("Deposited:", amount);
+        },
+
+        withdraw(amount) {
+            balance -= amount;
+            console.log("Withdrawn:", amount);
+        },
+
+        checkBalance() {
+            console.log("Current Balance:", balance);
+        }
+    };
+}
+
+const account = createBankAccount();
+
+// Perform transactions
+account.deposit(1000);
+account.withdraw(500);
+account.checkBalance();
+
+</script>
