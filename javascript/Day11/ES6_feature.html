@@ -1,0 +1,167 @@
+<script>
+
+// Task 1 - let
+    let name= "Arulkumar"
+    console.log(name);
+    name="jagan"
+    console.log(name);
+
+    // Task 2 - let Scope
+    // let names = true;
+    if(true){
+        let names="mani"
+        console.log(names);
+    }
+    // console.log(names); //name is not defined
+
+    // Task 3 - const
+    const courseName="React"
+    console.log(courseName);
+    // courseName="JS" const is constant variable so we cant reassign & redeclare
+    // console.log(courseName);
+
+    // Task 4 - Arrow Function
+    const greet =()=>{
+        console.log("Welcome To Javascript");
+    }
+    greet()
+    // Task 5 - Arrow Function With Parameters
+    const hero =(a)=>{
+        console.log("Hero Name:",a);
+    }
+    hero("Vijay")
+    // Task 6 - Arrow Function Addition
+    const add =(a,b)=>{
+        console.log(a+b);
+    }
+    add(10,20)
+
+    // Task 7 - Template Literals
+    let heroName="Vijay"
+    console.log(`My Favourite hero is ${heroName}`);
+
+    // Task 8 - Template Literals Multiple Values
+    let UserName ="Arul"
+    let coursesName ="React";
+    let city="Chennai"
+    console.log(`
+    "UserName:${UserName}"
+    "courseName:${coursesName}"
+    "City:${city}"`);
+
+    // Task 9 - Array Destructuring
+    const heros=["Vijay","Ajith","Surya"]
+    const [hero1,hero2]=heros
+    console.log(hero1);
+    console.log(hero2);
+
+    // Task 10 - Object Destructuring
+    let obj={
+        name:"Sudhan",
+        course:"MERN",
+        city:"Chennai"
+    }
+
+    const {names,course}=obj
+    console.log(name);
+    console.log(course);
+
+    // Task 11 - Spread Operator (Array Copy)
+    let courseDetails=["HTML","CSS","JAVASCRIPT"]
+    let newCousre=[...courseDetails,"React"]
+    console.log(newCousre);
+    // Task 12 - Spread Operator (Merge Arrays)
+    let firstHeros=['Vijay','Ajith']
+    let secondHeros=["surya",'SK']
+    let TotalHeros=[...firstHeros,...secondHeros]
+    console.log(TotalHeros);
+
+    // Task 13 - Spread Operator (Object Copy)
+    const courseObj={
+        name:"Arul",
+        city:"chennai",
+
+    }
+    const newCourseObj={...courseObj,course:"MERN"}
+    console.log(newCourseObj);
+    // Task 14 - Rest Parameter
+    const total=(...numbers)=>{
+        console.log(numbers);
+    }
+    total(10,20,30,40,50)
+    // Task 15 - Rest + Sum
+        
+    const totalN=(...numbers)=>{
+       let total=0
+       for(let num of numbers){
+           total +=num
+        }
+        console.log(total);
+    }
+    totalN(10,20,30,40,50)
+
+    // ES6 Intermediate Level Tasks (Interview Style)
+    // Task 1 - Student Report Generator
+    const studObj={
+        studName:"sudhan",
+        courses:"MERN",
+        cityIn:"Chennai"
+    }
+    //object detructuring
+    const {studName,courses,cityIn}=studObj
+    // teplate literals
+    console.log(`
+    student Name:${studName}
+    course:${courses}
+    city:${cityIn}`);
+    // Task 2 - Hero Array Merge
+    let heros1=["Vijay","Ajith"]
+    let heros2=["Surya","SK"]
+    const allHeros=[...heros1,...heros2]
+    const heroShow=()=>{
+        for(let i=0;i<allHeros.length;i++){
+            console.log(allHeros[i]);
+        }
+    }
+    heroShow()
+// Task 3 - Movie Collection Calculator
+    const calculateTotal=(...collections)=>{
+        let total=0;
+        for(let num of collections){
+            total +=num
+        }
+        console.log(`Total Collection:${total}`);
+    }
+    calculateTotal(500,800,300,700)
+
+    // Task 4 - Employee Object Update
+    const Employee={
+        empName:"Rahul",
+        Department:"IT",
+        salary:30000
+    }
+    const newEmp={...Employee,experience:2}
+    console.log(newEmp);
+    const {empName,Department,salary,experience}=newEmp
+    console.log(`
+                Employee Name:${empName} 
+                 Department:${Department}
+                 salary:${salary}
+                 experience:${experience}`);
+
+
+    // Task 5 - Online Course Enrollment System
+    const enrollStudent=(studentName,...cousreAll)=>{
+
+        console.log(`Student Name:${studentName}
+        Courses:${cousreAll}`);
+        //alternate
+        console.log(`Student Name:${studentName}`);
+        console.log("Courses:");
+        cousreAll.forEach(cousreAll =>{
+
+            console.log(`${cousreAll}`);
+        })
+    }
+    enrollStudent("Arul","React","Node","MongoDB")  
+</script>
