@@ -1,0 +1,275 @@
+<script>
+    //  map() Tasks
+    const heros=["vijay","ajith","surya"]
+  const uppercaseHero =  heros.map((e)=>{
+        return e.toUpperCase()
+    })
+    console.log(uppercaseHero);
+
+    // task2
+    const collections = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+];
+const multiplyColl=collections.map(e=>e*10)
+console.log(multiplyColl);
+
+// task3
+const movies = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+];
+const moviesName=movies.map(e=>console.log("Movie:",e))
+
+//  filter() Tasks
+
+const Valuecollections = [
+
+   100,
+
+   500,
+
+   800,
+
+   200,
+
+   900
+];
+const show = Valuecollections.filter((e)=>e>500)
+console.log(show);
+
+// 
+
+const marks = [
+
+   35,
+
+   80,
+
+   20,
+
+   90,
+
+   45
+];
+const showMarks= marks.filter((e)=>e>=35)
+console.log(showMarks);
+// 
+const heroes = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "SK",
+
+   "Suriya"
+];
+const heroesLength = heroes.filter((e)=>e.length>4)
+console.log(heroesLength);
+
+// find() task
+
+const heroesNames = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+const showHeroes = heroesNames.find((e)=>e==="Ajith")
+console.log(showHeroes);
+// 
+const Newcollections = [
+
+   100,
+
+   500,
+
+   800,
+
+   200
+];
+const findColl = Newcollections.find((e)=>e>400)
+console.log(findColl);
+
+// findIndex() Tasks
+const newHeroes = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+const cusHeros =newHeroes.findIndex((e)=>e==="Suriya")
+console.log(cusHeros);
+// 
+const moviesNames = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+];
+const movieNam=moviesNames.findIndex((e)=>e==="Leo")
+console.log(movieNam);
+
+//  some() Tasks
+
+const allMarks = [
+
+   35,
+
+   80,
+
+   20,
+
+   90
+];
+const allNewMarks=allMarks.some((e)=>e<35)
+console.log(allNewMarks);
+// 
+const allCollections = [
+
+   100,
+
+   200,
+
+   900
+];
+const newallColl = allCollections.some((e)=>e>800)
+console.log(newallColl);
+
+// every() Tasks
+const Studmarks = [
+
+   50,
+
+   70,
+
+   90,
+
+   40
+];
+const studmarkss= Studmarks.every((e)=>e>=35)
+console.log(studmarkss);
+// 
+const ages = [
+
+   20,
+
+   25,
+
+   30,
+
+   35
+];
+const markAges = ages.every((e)=>e>18)
+console.log(markAges);
+
+//  reduce() Tasks
+const collectionsall = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+];
+
+const allcollc = collectionsall.reduce((acc,curr)=>{
+return acc+curr
+},0)
+
+console.log(allcollc);
+
+//  Array of Objects Tasks
+const students = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+const studentsNames= students.map((e)=>e.name)
+console.log(studentsNames);
+
+// 
+const studentsDetails = [
+
+   {
+      id:1,
+      age:20
+   },
+
+   {
+      id:2,
+      age:30
+   },
+
+   {
+      id:3,
+      age:18
+   }
+];
+
+const details=studentsDetails.filter((e)=>e.age>20)
+console.log(details);
+
+// 
+const studentsd = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+
+const detNames=studentsd.find((e)=>e.id===2)
+console.log(detNames);
+
+// Intermediate Interview Tasks
+// find highest number
+const arr = [100,500,800,200]
+const arrall=arr.reduce((max,num)=>{
+    return Math.max(max,num)
+})
+console.log(arrall);
+// find lowest number
+const arrs = [100,500,800,200]
+const arralls=arr.reduce((min,num)=>{
+    return Math.min(min,num)
+})
+console.log(arralls);
+// Using filter()
+
+// Display only even numbers.
+const num=[10,15,20,25,30]
+const allNum = num.filter((e)=>e%2 ==0)
+console.log(allNum);
+</script>
