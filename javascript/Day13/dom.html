@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <title>DOM</title>
+</head>
+<body>
+    
+    <h1 id="title">Welcom</h1>
+    <p class="course">React</p>
+    <input type="text" id="username">
+    <img src="../../assets/images/bootstrap5.png" id="hero" alt="">
+    <a href="#" id="website">visit</a>
+
+    <h1 id="newTitle">
+        Hello
+     </h1>
+     
+     <p class="content">
+        Learning DOM
+     </p>
+     
+     <input id="name"/>
+
+     <div class="box" style="display:flex ; justify-content: center;align-items: center; background-color:aqua ; width:250px;  height:250px">
+        BOX
+     </div>
+     <button onclick="hidebox()">hide box</button>
+     <button onclick="showbox()">show box</button>
+
+</body>
+
+<script>
+    // Task 1 - Change Heading Text
+    const title = document.getElementById("title")
+    title.innerText ="welcome to javascript DOM"
+    // Task 2 - Change Paragraph Content
+    const course = document.querySelector(".course")
+    course.innerText="MERN stack"
+    // Task 3 - Change Input Value
+   document.getElementById("username").value = "sudhan"
+//    Task 4 - Change Image
+    document.querySelector("#hero").src="../assets/images/Javascript.png"
+    // Task 5 - Change Link
+    
+    document.getElementById("website").href="https://google.com"
+
+    // Bonus Task
+  // 1. Change heading text
+  document.getElementById("title").textContent = "Welcome";
+
+  // 2. Change paragraph text
+  document.querySelector(".content").textContent = "Learning JavaScript DOM";
+
+  // 3. Add value to input
+  document.getElementById("name").value = "Sudhan";
+
+//   
+    function hidebox(){
+        const box = document.querySelector(".box").style.display="none"
+    }
+    function showbox(){
+        const box = document.querySelector(".box").style.display="flex"
+    }
+
+</script>
+   
+
+</script>
+</html>
