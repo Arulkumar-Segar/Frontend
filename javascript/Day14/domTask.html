@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hero Name Display</title>
+</head>
+<body>
+
+    <input type="text" id="heroInput" placeholder="Enter hero name">
+    <button onclick="showHero()">Display Hero</button>
+<!--  -->
+    <h2 id="heroName"></h2>
+    <p id="myParagraph">
+        This is a paragraph. Click the button to hide it.
+    </p>
+    <button onclick="hideParagraph()">Hide Paragraph</button>
+<!--  -->
+
+    <p id="myParagraph" style="display: none;">
+        This is a hidden paragraph.
+    </p>
+    <button onclick="showParagraph()">Show Paragraph</button>
+<!--  -->
+
+    <p id="myParagraph">
+        This paragraph will be hidden and shown alternately.
+    </p>
+
+    <button onclick="toggleParagraph()">Toggle Paragraph</button>
+<!--  -->
+
+    <input type="text" id="username" placeholder="Enter username">
+    <button onclick="checkUser()">Login</button>
+
+    <p id="result"></p>
+
+<!--  -->
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Check Password</button>
+
+    <p id="result"></p>
+
+    <!--  -->
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+
+    <button onclick="showFullName()">Show Full Name</button>
+
+    <h2 id="fullName"></h2>
+    <!--  -->
+    <img id="myImage"
+    src="https://via.placeholder.com/200x150?text=Image+1"
+    alt="Image"
+    width="200">
+
+<br><br>
+
+<button onclick="changeImage()">Change Image</button>
+
+<!--  -->
+
+<h1 id="heading">Welcome</h1>
+
+<button onclick="changeHeading()">Change Heading</button>
+
+<!--  -->
+
+<input type="text" id="userInput" placeholder="Enter a value">
+<button onclick="submitForm()">Submit</button>
+
+<p id="message"></p>
+<!--  -->
+<button onclick="increaseCounter()">Click Me</button>
+<h2 id="count">0</h2>
+
+
+    <script>
+        // task1
+        function showHero() {
+            const hero = document.getElementById("heroInput").value;
+            document.getElementById("heroName").textContent = hero;
+        }
+        // task2
+        function hideParagraph() {
+            document.getElementById("myParagraph").style.display = "none";
+        }
+        // task3
+        function showParagraph() {
+            document.getElementById("myParagraph").style.display = "block";
+        }
+
+        // task4
+        function toggleParagraph() {
+            const paragraph = document.getElementById("myParagraph");
+
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";
+            } else {
+                paragraph.style.display = "none";
+            }
+        }
+
+        // task5
+
+        function checkUser() {
+            const username = document.getElementById("username").value;
+
+            if (username === "admin") {
+                document.getElementById("result").textContent = "Login Success";
+            } else {
+                document.getElementById("result").textContent = "Invalid User";
+            }
+        }
+
+        // task6
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+
+            if (password.length >= 8) {
+                document.getElementById("result").textContent = "Strong Password";
+            } else {
+                document.getElementById("result").textContent = "Weak Password";
+            }
+        }
+        // task7
+        function showFullName() {
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+
+            document.getElementById("fullName").textContent =
+                firstName + " " + lastName;
+        }
+        // task8
+        function changeImage() {
+            document.getElementById("myImage").src =
+                "https://via.placeholder.com/200x150?text=Image+2";
+        }
+        // task9
+        function changeHeading() {
+            const heading = document.getElementById("heading");
+
+            heading.textContent = "Hello World!";
+            heading.style.color = "blue";
+        }
+        // task10
+        function submitForm() {
+            const input = document.getElementById("userInput").value;
+
+            if (input.trim() === "") {
+                document.getElementById("message").textContent = "Please Enter Value";
+            } else {
+                document.getElementById("message").textContent = "Form Submitted";
+            }
+        }
+        // task11
+        let counter = 0;
+
+function increaseCounter() {
+    counter++;
+    document.getElementById("count").textContent = counter;
+}
+    </script>
+
+</body>
+</html>
