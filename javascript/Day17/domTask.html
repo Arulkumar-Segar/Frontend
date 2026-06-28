@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./domtask.css">
+</head>
+<body>
+    <h2>Character Counter</h2>
+    <textarea  id="inputText" oninput="charcCount()" cols="30" rows="10" placeholder="write"></textarea>
+    <p id="charcCount">Total Charcter:0</p>
+
+<!-- task2 -->
+<h2>Age Category Checker</h2>
+
+<input type="number" id="age" placeholder="Enter your age">
+<button onclick="checkAge()">Check Category</button>
+
+<h3 id="result"></h3>
+
+<!-- task3 -->
+
+<h2>Dark Mode / Light Mode</h2>
+
+<button onclick="toggleMode()" id="modeBtn">Dark Mode</button>
+
+<!-- task 4 -->
+<h2>Movie ticket Calculator</h2>
+<label>Enter Ticket Count:
+    <input type="number" id="ticket" placeholder="enter number of tickets">
+    </label>
+    <button onclick="ticketCount()">Calculate Total</button>
+    <h3 id="TotalAmount"></h3>
+    <!-- task5 -->
+
+    <h2>Profile Card Generator</h2>
+    <input type="text" id="name" placeholder="Enter a Name" >
+    <input type="text" id="role" placeholder="Enter a Role" >
+    <input type="text" id="company" placeholder="Enter a Company" >
+    <button onclick="prfileCard()">Generate Profile</button>
+    <div id="profile"></div>
+    
+    <!-- task 6 -->
+    <h2>Search a hero</h2>
+    <input type="text"  id="heroName">
+    <button onclick="search()" >Search hero</button>
+    <h3 id="hero"></h3>
+    <!-- task 7 -->
+    <h2>Search a lucky number</h2>
+    <input type="number"  id="inputNum">
+    <button onclick="lucky()" >Search lucky</button>
+    <h3 id="luckynumber"></h3>
+    <!-- task8 -->
+
+    <h2>Product price calculator</h2>
+    <label for="">Product name
+        <input type="text" id="productName" placeholder="Enter a Product Name">
+    </label>
+    <label for="">Product Quantity
+        <input type="number" id="productQty" placeholder="Enter a Product Quantity">
+    </label>
+    <label for="">Product Price
+        <input type="number" id="productPrice" placeholder="Enter a Product Price">
+    </label>
+    <button onclick="Productcalculator()">Price Calculator</button>
+        <div id="productdet"></div>
+<!-- task9 -->
+
+    <h2>Random quote Generator</h2>
+    <button onclick="randomQuote()">Random Generate</button>
+    <h3 id="showQuote"></h3>
+<!-- 10 -->
+
+    <h2>Student ID Generator</h2>
+    <input type="text" id="studName" placeholder="Enter a Name">
+    <input type="text" id="studCourse" placeholder="Enter a Course">
+    <button onclick="studID()"></button>
+    <h3 id="id"></h3>
+
+    <script src="./domTask.js"></script>
+</body>
+</html>
