@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>[1,2,3,4,5,6]</h2>
+<h3>Enter a number Split into array</h3>
+<input type="number" placeholder="Enter a number" id="input">
+<button onclick="splitNum()">Split</button>
+<p id="res"></p>
+    <script>
+
+        const splitNum = ()=>{
+
+        
+        const arr = [1,2,3,4,5,6]
+        const newnumArray=[]
+        const input = Number(document.getElementById("input").value)
+        const res = document.getElementById("res")
+        if(input < 0 || input>arr.length){
+            // console.log("Not Allowed");
+            res.innerHTML="Not Allowed"
+            return
+
+        }
+        else{
+            for(let i=0;i<arr.length; i += input){
+                newnumArray.push(arr.slice(i,i+input))
+            }
+            res.innerHTML="Split into"+JSON.stringify(newnumArray)
+        }
+    }
+    splitNum()
+    </script>
+</body>
+</html>
